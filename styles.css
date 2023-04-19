@@ -4,7 +4,7 @@ body {
 
 h1 {
     font-family: Monoton;
-    font-size: 70px;
+    font-size: 60px;
     margin: 0.2em;
 }
 
@@ -14,6 +14,18 @@ h2 {
 
 h2:first-of-type {
     margin-top: 0.5em;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid-size,
+.color-picker {
+    margin: 10px;
 }
 
 table,
@@ -28,13 +40,28 @@ table {
 }
 
 tr {
-    height: 20px;
+    height: 30px;
 }
 
 td {
-    width: 20px;
+    width: 30px;
 }
 
 input[type=number] {
     width: 6em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
